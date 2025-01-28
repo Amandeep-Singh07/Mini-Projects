@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Web Development</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+      .nav {
+        background-color: pink;
+        height: 83px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav ul li {
+        display: inline;
+        padding: 23px;
+      }
+      .container {
+        background-color: green;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        padding: 45px 75px;
+        text-align: center;
+      }
+      main {
+        padding: 10px;
+      }
+      .cont1 {
+        background-color: rgb(169, 21, 199);
+        height: 400px;
+        width: 40%;
+      }
+      .cont2 {
+        background-color: skyblue;
+        height: 400px;
+        width: 40%;
+        margin-left: 160px;
+      }
+      .box {
+        padding: 50px;
+        height: 280px;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box p {
+        border: 1px solid rgb(42, 25, 25);
+        color: black;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        width: 50%;
+      }
+      .orangeBox {
+        height: 61px;
+        width: 56px;
+        background-color: orange;
+        border-radius: 83px;
+        position: fixed;
+        right: 23px;
+        bottom: 12px;
+      }
+      footer {
+        height: 83px;
+        width: 100%;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="cont1"></div>
+        <div class="cont2"></div>
+      </div>
+      <div>
+        <div class="box">
+          <p>Welcome to this Sigma Web Development Express</p>
+        </div>
+      </div>
+      <div class="orangeBox"></div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
