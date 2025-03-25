@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>My To-Do List</h1>
+    <input type="text" placeholder="Enter your Task" id="taskInput">
+    <button id="add" onclick="addTask()">Add Task</button>
+    <ul id="TaskList"></ul>
+
+
+
+    <script>
+        function addTask(){
+            const taskInput=document.getElementById("taskInput")
+            const taskValue=taskInput.value;
+
+            if(taskValue===""){
+                alert("please Enter the task")
+                return;
+            }
+            
+
+            // create a li tag
+            const li=document.createElement("li")
+            li.textContent=taskValue
+            document.getElementById("TaskList").appendChild(li)
+
+            // clear input field
+            taskInput.value="";
+        }
+
+
+        taskInput.onkeypress=(e)=>{
+            if(e.key==='Enter') add.click()
+        }
+    </script>
+
+</body>
+</html>
