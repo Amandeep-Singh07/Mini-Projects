@@ -1,20 +1,28 @@
+<!-- HOME WORK
+ 
+    put a edit button => to edit the task
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     
-    <h1>My To-Do List</h1>
+   
+</head>
+<body  class="">
+    
+    <h1 >My To-Do List</h1>
     <input type="text" placeholder="Enter your Task" id="taskInput">
     <button id="add" onclick="addTask()">Add Task</button>
     <ul id="TaskList"></ul>
 
 
 
-    <script>
+    <script >
         function addTask(){
             const taskInput=document.getElementById("taskInput")
             const taskValue=taskInput.value;
@@ -28,6 +36,15 @@
             // create a li tag
             const li=document.createElement("li")
             li.textContent=taskValue
+
+            const deleteButton=document.createElement("button")
+            deleteButton.textContent='Delete'
+
+            deleteButton.onclick=function(){
+                li.remove()
+            }
+            li.appendChild(deleteButton)
+
             document.getElementById("TaskList").appendChild(li)
 
             // clear input field
@@ -38,6 +55,7 @@
         taskInput.onkeypress=(e)=>{
             if(e.key==='Enter') add.click()
         }
+    
     </script>
 
 </body>
